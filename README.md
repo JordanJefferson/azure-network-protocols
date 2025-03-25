@@ -28,6 +28,10 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 - Observe ICMP traffic
 - Configuring a Firewall (Network Security Group)
 - Observe SSH traffic
+- Obsereve DHCP traffic
+- Observe DNS Traffic
+- Observe RDP Traffic
+- Delete resources
 
 <h2>Actions and Observations</h2>
 
@@ -116,8 +120,31 @@ Filter Wirershark traffic to "DHCP" and use "ipconfig /renew" in PowerShell to a
 
 ![image](https://github.com/user-attachments/assets/9575fbd2-1265-411f-ae5a-0c5b8c3d00f6)
 
+<br>
+<br>
 
+<h4>8. Observe DNS Traffic</h4>
 
+Filter for dns traffic in Wireshark and in PowerShell, use "nslookup" to see Google and Disney's IP adresses.
+
+![image](https://github.com/user-attachments/assets/9abe62d7-a011-4f6e-9a56-91d0fc53cf98)
+
+<br>
+<br>
+
+<h4>9. Observe RDP Traffic</h4>
+
+filter for rdp (tcp.port == 3389) traffic in Wireshark and observe the spam.
+
+It spams non-stop because it's constantly showing a livestream from one computer to another. 
+![image](https://github.com/user-attachments/assets/f6a56c3f-d9bd-4ac7-af91-a54e41a164e1)
+
+<br>
+<br>
+
+<h4>10. Delete resources</h4>
+
+![image](https://github.com/user-attachments/assets/1f3130dc-e269-4852-8ad6-2030c3dcd899)
 
 
 
