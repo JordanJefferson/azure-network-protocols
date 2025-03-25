@@ -18,7 +18,7 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 <h2>Operating Systems Used </h2>
 
 - Windows 10 (21H2)
-- Ubuntu Server 20.04
+- Ubuntu Server 24.04
 
 <h2>High-Level Steps</h2>
 
@@ -103,9 +103,18 @@ Filter "ssh" or "tcp.port==22" traffic in Wireshark and in Windows VM, use Power
 
 <br>
 
-Different commands in SSH.
+Wireshark traffic and Different commands in SSH.
 ![image](https://github.com/user-attachments/assets/a7b1b76f-e845-47d9-a12b-0737a862d325)
+Type ‘exit’ and press [Enter] to exit the SSH connection.
 
+<br>
+<br>
+
+<h4>7. Obsereve DHCP traffic</h4>
+
+Filter Wirershark traffic to "DHCP" and use "ipconfig /renew" in PowerShell to attempt to issue a new ip address.
+
+![image](https://github.com/user-attachments/assets/9575fbd2-1265-411f-ae5a-0c5b8c3d00f6)
 
 
 
