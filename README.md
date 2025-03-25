@@ -28,7 +28,7 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 - Observe ICMP traffic
 - Configuring a Firewall (Network Security Group)
 - Observe SSH traffic
-- Obsereve DHCP traffic
+- Observe DHCP traffic
 - Observe DNS Traffic
 - Observe RDP Traffic
 - Delete resources
@@ -114,9 +114,9 @@ Type ‘exit’ and press [Enter] to exit the SSH connection.
 <br>
 <br>
 
-<h4>7. Obsereve DHCP traffic</h4>
+<h4>7. Observe DHCP traffic</h4>
 
-Filter Wirershark traffic to "DHCP" and use "ipconfig /renew" in PowerShell to attempt to issue a new ip address.
+Filter Wireshark traffic to "DHCP" and use "ipconfig /renew" in PowerShell to attempt to issue a new ip address.
 
 ![image](https://github.com/user-attachments/assets/9575fbd2-1265-411f-ae5a-0c5b8c3d00f6)
 
