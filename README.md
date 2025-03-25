@@ -26,6 +26,8 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 - Remote Desktop into Windows VM and download Wireshark
 - Open Wireshark and PowerShell as Admin
 - Observe ICMP traffic
+- Configuring a Firewall (Network Security Group)
+- Observe SSH traffic
 
 <h2>Actions and Observations</h2>
 
@@ -64,6 +66,36 @@ Filter icmp protocol in wireshark -> ping the private IP address of the Ubuntu V
 
 ![image](https://github.com/user-attachments/assets/43bbf66c-d79f-4771-8047-e151a0c46443)
 
+<br>
+<br>
+
+<h4>5. Configuring a Firewall (Network Security Group)</h4>
+
+Initiate non-stop ping from windows VM to Ubuntu in PowerShell
+
+![image](https://github.com/user-attachments/assets/1498dcd5-d8c6-4167-8ec6-7228c0fe51ef)
+
+<br>
+
+Add inbound security rule to deny ICMP traffic
+![image](https://github.com/user-attachments/assets/faa82324-460d-481f-9d50-92e7caa170a5)
+
+Once denied, all requests will time out.
+
+![image](https://github.com/user-attachments/assets/5667e010-0486-45b7-9abf-79ca682332bc) 
+
+<br>
+
+If you allow ICMP traffic (or delete the security rule), replies will resume. 
+
+![image](https://github.com/user-attachments/assets/cb35776f-11d1-42e9-ab7e-de893ec59b3a)
+
+![image](https://github.com/user-attachments/assets/a7d8df4b-3991-40b2-8e54-b769cb4eea36)
+
+<br>
+<br>
+
+<h4>6. Observe SSH traffic</h4>
 
 
 
