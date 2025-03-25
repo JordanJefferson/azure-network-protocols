@@ -97,6 +97,16 @@ If you allow ICMP traffic (or delete the security rule), replies will resume.
 
 <h4>6. Observe SSH traffic</h4>
 
+Filter "ssh" or "tcp.port==22" traffic in Wireshark and in Windows VM, use PowerShell to "SSH into" Ubuntu VM.
+
+![image](https://github.com/user-attachments/assets/a1cf2163-55ee-4ce8-8f37-0dc4708fae1f)
+
+<br>
+
+Different commands in SSH.
+![image](https://github.com/user-attachments/assets/a7b1b76f-e845-47d9-a12b-0737a862d325)
+
+
 
 
 
