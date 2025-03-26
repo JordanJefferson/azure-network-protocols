@@ -3,7 +3,7 @@
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-In this project, we observe various network traffic to and from Azure Virtual Machines with Wireshark as well as experiment with Network Security Groups. <br />
+This project displays network traffic between Azure Virtual Machines using Wireshark and explores the impact of Network Security Groups (NSGs). The objective was to observe real-time network behavior, analyze packet flows, and enforce security rules to control traffic. <br />
 
 
 
@@ -37,6 +37,7 @@ In this project, we observe various network traffic to and from Azure Virtual Ma
 
 <h4>1. Virtual machines post creation.</h4>  
 
+They're in the same vitrual network and resource group.
 ![image](https://github.com/user-attachments/assets/62aefcc0-132f-4cf4-aeda-0649cc3b3c48)
 
 ![image](https://github.com/user-attachments/assets/0a422f05-f364-41c3-baa0-02658e233d3b)
@@ -95,6 +96,7 @@ If you allow ICMP traffic (or delete the security rule), replies will resume.
 ![image](https://github.com/user-attachments/assets/cb35776f-11d1-42e9-ab7e-de893ec59b3a)
 
 ![image](https://github.com/user-attachments/assets/a7d8df4b-3991-40b2-8e54-b769cb4eea36)
+Press "ctrl c" in PowerShell to stop ping.
 
 <br>
 <br>
