@@ -3,7 +3,7 @@
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-This project displays network traffic between Azure Virtual Machines using PowerShell and Wireshark. It also explores the impact of Network Security Groups (NSGs). The objective was to observe real-time network behavior and packet flows and enforce security rules to control traffic. <br />
+This project showcases network traffic between Azure Virtual Machines using PowerShell and Wireshark while exploring the impact of Network Security Groups (NSGs). The objective was to observe real-time network behavior, monitor packet flows, and enforce security rules to control traffic. <br />
 
 
 
@@ -20,7 +20,7 @@ This project displays network traffic between Azure Virtual Machines using Power
 - Windows 10 (22H2)
 - Ubuntu Server 24.04
 
-<h2>High-Level Steps</h2>
+<h2>Key Steps</h2>
 
 - Create a virtual machine (VM) in Windows 10 and one in Linux (Ubuntu)
 - Remote Desktop into Windows VM and download Wireshark
