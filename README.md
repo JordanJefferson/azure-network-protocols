@@ -136,7 +136,7 @@ Filter dns traffic in Wireshark and in PowerShell, use "nslookup" to see Google 
 
 <h4>9. Observe RDP Traffic</h4>
 
-filter rdp (tcp.port == 3389) traffic in Wireshark and observe the spam.
+Filter rdp (tcp.port == 3389) traffic in Wireshark and observe the spam.
 
 It continuously generates traffic because it's constantly streaming the remote session in real-time.
 ![image](https://github.com/user-attachments/assets/f6a56c3f-d9bd-4ac7-af91-a54e41a164e1)
