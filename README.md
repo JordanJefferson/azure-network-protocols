@@ -56,7 +56,7 @@ https://www.wireshark.org/download.html
 
 <h4>3. Observe ICMP traffic</h4>
 
-Filtered icmp protocol in wireshark and pinged the private IP address of the Ubuntu VM in PowerShell.
+Filtered icmp traffic in wireshark and pinged the private IP address of the Ubuntu VM in PowerShell.
 
 ![image](https://github.com/user-attachments/assets/40b6f5f4-28fe-48cd-b57d-8aab656bfcb6) 
 
