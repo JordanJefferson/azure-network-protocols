@@ -24,7 +24,6 @@ This project showcases network traffic between Azure Virtual Machines using Powe
 
 - Create a virtual machine (VM) in Windows 10 and one in Linux (Ubuntu)
 - Remote Desktop into Windows VM and download Wireshark
-- Open Wireshark and PowerShell as Admin
 - Observe ICMP traffic
 - Configuring a Firewall (Network Security Group)
 - Observe SSH traffic
@@ -55,15 +54,7 @@ https://www.wireshark.org/download.html
 <br>
 <br>
 
-<h4>3. Open Wireshark and PowerShell.</h4>
-
-![image](https://github.com/user-attachments/assets/f0e1b859-71b5-431c-bbc2-aae637ee445f)
-
-
-<br>
-<br>
-
-<h4>4. Observe ICMP traffic</h4>
+<h4>3. Observe ICMP traffic</h4>
 
 Filtered icmp protocol in wireshark and pinged the private IP address of the Ubuntu VM in PowerShell.
 
@@ -74,7 +65,7 @@ Filtered icmp protocol in wireshark and pinged the private IP address of the Ubu
 <br>
 <br>
 
-<h4>5. Configuring a Firewall (Network Security Group)</h4>
+<h4>4. Configuring a Firewall (Network Security Group)</h4>
 
 Initiated a non-stop ping from windows VM to Ubuntu in PowerShell.
 
@@ -101,7 +92,7 @@ Stopped ping with "ctrl c" in PowerShell.
 <br>
 <br>
 
-<h4>6. Observe SSH traffic</h4>
+<h4>5. Observe SSH traffic</h4>
 
 Filter "ssh" or "tcp.port==22" traffic in Wireshark and in Windows VM, use PowerShell to "SSH into" Ubuntu VM.
 
@@ -109,14 +100,14 @@ Filter "ssh" or "tcp.port==22" traffic in Wireshark and in Windows VM, use Power
 
 <br>
 
-Wireshark traffic and Different commands in SSH.
+Observed SSH traffic and executed commands.
 ![image](https://github.com/user-attachments/assets/a7b1b76f-e845-47d9-a12b-0737a862d325)
-Type ‘exit’ and press [Enter] to exit the SSH connection.
+Typed ‘exit’ and pressed [Enter] to exit the SSH connection.
 
 <br>
 <br>
 
-<h4>7. Observe DHCP traffic</h4>
+<h4>6. Observe DHCP traffic</h4>
 
 Filter dhcp traffic in Wireshark and use "ipconfig /renew" in PowerShell to attempt to issue a new ip address.
 
@@ -125,7 +116,7 @@ Filter dhcp traffic in Wireshark and use "ipconfig /renew" in PowerShell to atte
 <br>
 <br>
 
-<h4>8. Observe DNS Traffic</h4>
+<h4>7. Observe DNS Traffic</h4>
 
 Filter dns traffic in Wireshark and in PowerShell, use "nslookup" to see Google and Disney's IP addresses.
 
@@ -134,7 +125,7 @@ Filter dns traffic in Wireshark and in PowerShell, use "nslookup" to see Google 
 <br>
 <br>
 
-<h4>9. Observe RDP Traffic</h4>
+<h4>8. Observe RDP Traffic</h4>
 
 Filter rdp (tcp.port == 3389) traffic in Wireshark and observe the spam.
 
@@ -144,7 +135,7 @@ It continuously generates traffic because it's constantly streaming the remote s
 <br>
 <br>
 
-<h4>10. Delete resources</h4>
+<h4>9. Delete resources</h4>
 
 ![image](https://github.com/user-attachments/assets/1f3130dc-e269-4852-8ad6-2030c3dcd899)
 
