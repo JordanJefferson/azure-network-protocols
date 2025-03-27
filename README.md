@@ -37,7 +37,7 @@ This project showcases network traffic between Azure Virtual Machines using Powe
 
 <h4>1. Virtual machines post creation.</h4>  
 
-They're in the same vitrual network and resource group.
+They're in the same virtual network and resource group.
 ![image](https://github.com/user-attachments/assets/62aefcc0-132f-4cf4-aeda-0649cc3b3c48)
 
 ![image](https://github.com/user-attachments/assets/0a422f05-f364-41c3-baa0-02658e233d3b)
@@ -65,7 +65,7 @@ https://www.wireshark.org/download.html
 
 <h4>4. Observe ICMP traffic</h4>
 
-Filter icmp protocol in wireshark -> ping the private IP address of the Ubuntu VM in PowerShell
+Filtered icmp protocol in wireshark and pinged the private IP address of the Ubuntu VM in PowerShell.
 
 ![image](https://github.com/user-attachments/assets/40b6f5f4-28fe-48cd-b57d-8aab656bfcb6) 
 
@@ -76,13 +76,13 @@ Filter icmp protocol in wireshark -> ping the private IP address of the Ubuntu V
 
 <h4>5. Configuring a Firewall (Network Security Group)</h4>
 
-Initiate non-stop ping from windows VM to Ubuntu in PowerShell
+Initiated a non-stop ping from windows VM to Ubuntu in PowerShell.
 
 ![image](https://github.com/user-attachments/assets/1498dcd5-d8c6-4167-8ec6-7228c0fe51ef)
 
 <br>
 
-Add inbound security rule to deny ICMP traffic
+Denied ICMP traffic by adding an inbound security rule.
 ![image](https://github.com/user-attachments/assets/faa82324-460d-481f-9d50-92e7caa170a5)
 
 Once denied, all requests will time out.
@@ -96,7 +96,7 @@ If you allow ICMP traffic (or delete the security rule), replies will resume.
 ![image](https://github.com/user-attachments/assets/cb35776f-11d1-42e9-ab7e-de893ec59b3a)
 
 ![image](https://github.com/user-attachments/assets/a7d8df4b-3991-40b2-8e54-b769cb4eea36)
-Press "ctrl c" in PowerShell to stop ping.
+Stopped ping with "ctrl c" in PowerShell.
 
 <br>
 <br>
@@ -118,7 +118,7 @@ Type ‘exit’ and press [Enter] to exit the SSH connection.
 
 <h4>7. Observe DHCP traffic</h4>
 
-Filter Wireshark traffic to "DHCP" and use "ipconfig /renew" in PowerShell to attempt to issue a new ip address.
+Filter dhcp traffic in Wireshark and use "ipconfig /renew" in PowerShell to attempt to issue a new ip address.
 
 ![image](https://github.com/user-attachments/assets/9575fbd2-1265-411f-ae5a-0c5b8c3d00f6)
 
@@ -127,7 +127,7 @@ Filter Wireshark traffic to "DHCP" and use "ipconfig /renew" in PowerShell to at
 
 <h4>8. Observe DNS Traffic</h4>
 
-Filter for dns traffic in Wireshark and in PowerShell, use "nslookup" to see Google and Disney's IP adresses.
+Filter dns traffic in Wireshark and in PowerShell, use "nslookup" to see Google and Disney's IP addresses.
 
 ![image](https://github.com/user-attachments/assets/9abe62d7-a011-4f6e-9a56-91d0fc53cf98)
 
@@ -136,9 +136,9 @@ Filter for dns traffic in Wireshark and in PowerShell, use "nslookup" to see Goo
 
 <h4>9. Observe RDP Traffic</h4>
 
-filter for rdp (tcp.port == 3389) traffic in Wireshark and observe the spam.
+filter rdp (tcp.port == 3389) traffic in Wireshark and observe the spam.
 
-It spams non-stop because it's constantly showing a livestream from one computer to another. 
+It continuously generates traffic because it's constantly streaming the remote session in real-time.
 ![image](https://github.com/user-attachments/assets/f6a56c3f-d9bd-4ac7-af91-a54e41a164e1)
 
 <br>
