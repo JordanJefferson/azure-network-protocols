@@ -62,6 +62,8 @@ Filtered icmp traffic in wireshark and pinged the private IP address of the Ubun
 
 ![image](https://github.com/user-attachments/assets/43bbf66c-d79f-4771-8047-e151a0c46443)
 
+ICMP is a connectionless protocol used for network diagnostics.
+
 <br>
 <br>
 
@@ -98,6 +100,8 @@ Filter "ssh" or "tcp.port==22" traffic in Wireshark and in Windows VM, use Power
 
 ![image](https://github.com/user-attachments/assets/a1cf2163-55ee-4ce8-8f37-0dc4708fae1f)
 
+SSH encrypts communication, so you can't see credentials in plain text.
+
 <br>
 
 Observed SSH traffic and executed commands.
@@ -113,6 +117,8 @@ Filter dhcp traffic in Wireshark and use "ipconfig /renew" in PowerShell to atte
 
 ![image](https://github.com/user-attachments/assets/9575fbd2-1265-411f-ae5a-0c5b8c3d00f6)
 
+DHCP assigns IP addresses automatically, ensuring network connectivity. Blocking DCHP at the NSG would prevent devices from obtaining an IP.
+
 <br>
 <br>
 
@@ -121,6 +127,8 @@ Filter dhcp traffic in Wireshark and use "ipconfig /renew" in PowerShell to atte
 Filter dns traffic in Wireshark and in PowerShell, use "nslookup" to see Google and Disney's IP addresses.
 
 ![image](https://github.com/user-attachments/assets/9abe62d7-a011-4f6e-9a56-91d0fc53cf98)
+
+DNS converts domain names to IP addresses for internet access. Blocking DNS at the NSG would prevent domain resolution, forcing users to rely on direct IP addresses.
 
 <br>
 <br>
